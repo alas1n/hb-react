@@ -1,0 +1,167 @@
+.login-page-sectioin {
+  background-color: $red-dark-color;
+  height: 100vh;
+  position: relative;
+}
+
+.login-contatiner{
+  background-color: $white-color;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 50rem;
+  width: 70rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  // display: inline;
+}
+
+.login-form-backgorund {
+  display:inline-block;
+  height: 100%;
+  width: 50%;
+  background-image: url('./../../assets/iStock-641755408@3x-edited.jpg');
+  background-size: cover;
+  vertical-align:top;
+}
+
+.login-form {
+  color: $text-blue-color;
+  display:inline-block;
+  width: 50%;
+  text-align: center;
+  
+
+  &_logo-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    .logo-container_image {
+      vertical-align: middle;
+      display: inline-block;
+      height: 2rem;
+    }
+    
+    .logo-container_name {
+      vertical-align: middle;
+      margin-left: 0.5rem;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  
+  &_welcome-text {
+    font-size: 2.5rem;
+    // background-color: brown;
+    // position: relative;
+  }
+  
+  &_inputs{
+    // background-color: brown;
+    // vertical-align: center;
+    
+    // width: 80%;
+    padding: 4rem;
+    
+    .inputs-email{
+      margin-bottom: 1.2rem;
+      
+      &_label {
+        display: block;
+        margin-bottom: .75rem;
+        width: 100%;
+        text-align: left;
+      }
+      &_input {
+        width: 100%;
+        height: 3rem;
+        border-radius: 4px;
+        border: solid 1px #d5d6e5;
+        background-color: #ffffff;
+        
+      }
+    }
+    
+    .inputs-password{
+      &_label{
+        text-align: left;
+        margin-bottom: .75rem;
+        display: block;
+        width: 100%;
+
+      }
+      &_input{
+        width: 100%;
+        width: 100%;
+        height: 3rem;
+        border-radius: 4px;
+        border: solid 1px #d5d6e5;
+        background-color: #ffffff;
+
+      }
+    }
+
+    .inputs-checkbox {
+      text-align: left;
+      margin-top: 1rem;
+      
+      &_input{
+        height: 2rem;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      &_label {
+        vertical-align: top;
+        line-height: 2rem;
+    
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      
+      &_forget-pass-txt {
+        color: $text-blue-color;
+        text-decoration: none;
+        line-height: 2rem;
+        float: right;
+
+      }
+    }
+    .inputs-button {
+      outline: none;
+      font-size: 1rem;
+      margin-top: 2rem;
+      background-image: linear-gradient(259deg,
+                        rgba($red-dark-color, 1) ,
+                        rgba($red-light-color, 1));
+      width: 100%;
+      color: $white-color;
+      height: 3.5rem;
+      border-radius: 4px;
+      border: solid 1px #d5d6e5;
+
+      &:hover{
+        background-image: linear-gradient(259deg, 
+                          rgba($red-dark-color,.9), 
+                          rgba($red-light-color, .9));
+      }
+    }
+    .login-options-seprator {
+      background-color: aqua;
+
+      &_line {
+        vertical-align: center;
+        display: inline-block;
+        width: 10px;
+      }
+      &_text {
+        vertical-align: center;
+        display: inline-block;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.256" height="34.256" viewBox="0 0 34.256 34.256">
+    <defs>
+        <style>
+            .cls-1{fill:#55acee}.cls-2{fill:#f1f2f2}
+        </style>
+    </defs>
+    <g id="twitter" transform="translate(-.001)">
+        <circle id="Ellipse_20" cx="17.128" cy="17.128" r="17.128" class="cls-1" data-name="Ellipse 20" transform="translate(.001)"/>
+        <g id="Group_5755" data-name="Group 5755" transform="translate(7.665 10.389)">
+            <path id="Path_10326" d="M45.058 35.948a8.168 8.168 0 0 1-2.352.644 4.105 4.105 0 0 0 1.8-2.265 8.2 8.2 0 0 1-2.6.993 4.1 4.1 0 0 0-6.977 3.735 11.622 11.622 0 0 1-8.439-4.278 4.1 4.1 0 0 0 1.267 5.466 4.065 4.065 0 0 1-1.857-.513v.052a4.1 4.1 0 0 0 3.288 4.018 4.11 4.11 0 0 1-1.849.071 4.1 4.1 0 0 0 3.824 2.843 8.265 8.265 0 0 1-6.061 1.7A11.643 11.643 0 0 0 43.027 38.6c0-.177 0-.354-.012-.529a8.3 8.3 0 0 0 2.043-2.119z" class="cls-2" data-name="Path 10326" transform="translate(-25.103 -34.028)"/>
+        </g>
+    </g>
+</svg>
