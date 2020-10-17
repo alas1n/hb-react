@@ -72,6 +72,14 @@ function LoginPage() {
               <LoginOptionsButton icon={Twitter_icon} />
               <LoginOptionsButton icon={Outlook_icon} />
             </div>
+            <div className="dont-have-account-wrapper">
+              <p className="dont-have-account-wrapper_txt">
+                Don't have an accunt?
+              </p>
+              <a className="dont-have-account-wrapper_link" href="#">
+                Signup
+              </a>
+            </div>
           </form>
         </div>
         <div className="login-form-backgorund"></div>

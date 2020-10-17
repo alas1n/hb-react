@@ -7,7 +7,11 @@
   outline: none;
   border: none;
   border-radius: 12px;
-  background-color: #f1f0f6;
+  background-color: $gray-color-2;
+  &:hover{
+    background-color: rgba($color:$gray-color-2, $alpha: 0.6);
+    cursor: pointer;
+  }
 
   &_icon {
     width: 2.5rem;

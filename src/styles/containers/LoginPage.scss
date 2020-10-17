@@ -148,6 +148,7 @@
         background-image: linear-gradient(259deg, 
                           rgba($red-dark-color,.9), 
                           rgba($red-light-color, .9));
+        cursor: pointer;
       }
     }
     .login-options-seprator {
@@ -177,6 +178,22 @@
       margin-top: 2rem;
       justify-content: space-between;
       align-items: center;
+    }
+    .dont-have-account-wrapper {
+      margin-top: 2rem;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      
+      &_txt{
+        color: $gray-color-1;
+      }
+      &_link {
+        margin-left: 3px;
+        text-decoration: none;
+        color: $red-dark-color;
+        
+      }
     }
   }
 }
