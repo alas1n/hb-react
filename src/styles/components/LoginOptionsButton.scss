@@ -1,0 +1,17 @@
+.login-options-button {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background-color: #f1f0f6;
+
+  &_icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+

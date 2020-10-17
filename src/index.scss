@@ -1,6 +1,9 @@
 @import './styles/base';
 @import './styles/variables';
 
-
+// PAGES
 @import './styles/containers/TestPage';
 @import './styles/containers/LoginPage';
+
+// COMPONENTS
+@import './styles/components/LoginOptionsButton'
