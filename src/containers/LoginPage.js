@@ -23,7 +23,6 @@ function LoginPage() {
           <h1 className="login-form_welcome-text">Welcome Back</h1>
 
           <form className="login-form_inputs">
-            {/*  */}
             <div className="inputs-email">
               <label className="inputs-email_label" for="email">
                 Username / Email
