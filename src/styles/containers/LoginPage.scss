@@ -51,26 +51,6 @@ label ,a, p {
     width: 100%;
   }
   
-
-  &_logo-container {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-
-    .logo-container_image {
-      vertical-align: middle;
-      display: inline-block;
-      height: 3.5rem;
-    }
-    
-    .logo-container_name {
-      vertical-align: middle;
-      margin-left: 0.5rem;
-      display: inline-block;
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
   
   &_welcome-text {
     font-size: 5rem;

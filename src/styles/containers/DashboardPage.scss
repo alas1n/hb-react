@@ -1,0 +1,24 @@
+.dashboard-header {
+  background-color: $white-color;
+  height: 7.9rem;
+  padding: 1.7rem 0;
+
+
+}
+.page-containter {
+  width: 100vw;
+  height: calc(100vh - 7rem);
+  background-color: $white-color-1;
+}
+.dashboard-navigation {
+  background-color: $white-color;
+  display: inline-block;
+  width: 26.8rem;
+  height: 100%;
+}
+.dashboard-sec {
+  display: inline;
+  background-color: royalblue;
+  width: calc(100% - 26.8rem);
+  height: 100%;
+}

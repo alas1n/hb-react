@@ -8,6 +8,11 @@
 // PAGES
 @import './styles/containers/TestPage';
 @import './styles/containers/LoginPage';
+@import './styles/containers/DashboardPage';
 
 // COMPONENTS
-@import './styles/components/LoginOptionsButton'
+@import './styles/components/LoginOptionsButton';
+@import './styles/components/LogoComponent';
+@import './styles/components/SearchBarComponent';
+@import './styles/components/SearchButtonComponent';
+@import './styles/components/ProfileComponent';

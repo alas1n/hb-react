@@ -1,0 +1,35 @@
+.searchbar-wrapper {
+  display: inline;
+  position: absolute;
+  left : 26.8rem;
+  width: 53.7rem;
+  background-color: $white-color-1;
+  border-radius: 8px;
+  &_icon {
+    position: absolute;
+    top:50%;
+    left: 2rem;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color: $gray-color-3;
+    
+  } 
+
+  &_input {
+    outline: none;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: $white-color-1;
+    z-index: 10;
+    padding-left: 4rem;
+    color: $text-blue-color;
+    height: 4.5rem;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $gray-color-3;
+    }
+  }
+}

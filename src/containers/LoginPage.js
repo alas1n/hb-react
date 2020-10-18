@@ -2,6 +2,7 @@ import React from 'react';
 
 // COMPONENTS:
 import LoginOptionsButton from './../components/LoginOptionsButton';
+import LogoComponent from './../components/LogoComponent';
 
 // IMAGES:
 import hubmeta_logo from './../assets/logo.png';
@@ -15,11 +16,7 @@ function LoginPage() {
     <section className="login-page-sectioin">
       <div className="login-contatiner">
         <div className="login-form">
-          <div className="login-form_logo-container">
-            <img className="logo-container_image" src={hubmeta_logo}></img>
-            <p className="logo-container_name">HubMeta</p>
-          </div>
-
+          <LogoComponent style={{ 'margin-top': '6rem' }} />
           <h1 className="login-form_welcome-text">Welcome Back</h1>
 
           <form className="login-form_inputs">
