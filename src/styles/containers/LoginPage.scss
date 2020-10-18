@@ -28,7 +28,11 @@ label ,a, p {
   width: 50%;
   background-image: url('./../../assets/iStock-641755408@3x-edited.jpg');
   background-size: cover;
-  vertical-align:top;
+  background-position: center;
+  @include respond(tab-port) {
+    width: 0;
+  }
+  
 }
 
 .login-form {
@@ -41,6 +45,9 @@ label ,a, p {
   height: 100%;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @include respond(tab-port) {
+    width: 100%;
   }
   
 
@@ -67,12 +74,22 @@ label ,a, p {
   &_welcome-text {
     font-size: 5rem;
     margin-top: 5rem;
-    margin-bottom: 10vh;
+    margin-bottom: 7rem;
     white-space: nowrap;
+    @include respond(big-desktop) {
+      margin-bottom: 15rem; 
+    }
+    @include respond(tab-land) {
+      font-size:4rem;
+    }
+    @include respond(tab-port) {
+      font-size:3rem;
+    }
+    
   }
   
   &_inputs{
-    padding: 4rem;
+    // padding: 1rem;
     
     .inputs-email{
       

@@ -1,6 +1,6 @@
 .login-options-button {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,10 +12,27 @@
     background-color: rgba($color:$gray-color-2, $alpha: 0.6);
     cursor: pointer;
   }
+  @include respond(tab-land) {
+    width: 6rem;
+    height: 6rem;
+  }
+  @include respond(tab-port) {
+    width: 5rem;
+    height: 5rem;
+  }
+  
 
   &_icon {
     width: 3rem;
     height: 3rem;
+    @include respond(tab-land) {
+      width: 2rem;
+      height: 2rem;
+    }
+    @include respond(tab-port) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }
 
