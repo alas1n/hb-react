@@ -8,6 +8,7 @@
   border: none;
   border-radius: 12px;
   background-color: $gray-color-2;
+  margin: 0 1rem;
   &:hover{
     background-color: rgba($color:$gray-color-2, $alpha: 0.6);
     cursor: pointer;

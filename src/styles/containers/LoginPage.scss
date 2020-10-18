@@ -1,5 +1,6 @@
 label ,a, p {
   font-size: 1.3rem;
+  font-family: 'Titillium Web';
 }
 
 .login-page-sectioin {
@@ -89,10 +90,7 @@ label ,a, p {
   }
   
   &_inputs{
-    // padding: 1rem;
-    
     .inputs-email{
-      
       margin-bottom: 1.2rem;
       
       &_label {
@@ -111,6 +109,9 @@ label ,a, p {
         background-color: $white-color;
         &:focus {
           outline: none;
+        }
+        &::placeholder{
+          color: #b1b3cd;
         }
         
       }
@@ -135,6 +136,9 @@ label ,a, p {
         background-color: $white-color;
         &:focus {
           outline: none;
+        }
+        &::placeholder{
+          color: #b1b3cd;
         }
       }
     }
@@ -166,7 +170,7 @@ label ,a, p {
         text-decoration: none;
         line-height: 2rem;
         float: right;
-
+        font-weight: bold;
       }
     }
     .inputs-button {
@@ -181,6 +185,7 @@ label ,a, p {
       height: 5rem;
       border-radius: 1rem;
       border: solid 1px $white-color;
+      font-weight: bold;
 
       &:hover{
         background-image: linear-gradient(259deg, 
@@ -190,7 +195,7 @@ label ,a, p {
       }
     }
     .login-options-seprator {
-      margin: 5rem 0 ;
+      margin: 3rem 0 ;
       color: $gray-color-1;
       display: flex;
       align-content: center;
@@ -212,8 +217,8 @@ label ,a, p {
  
     .login-options-wrapper {
       display: flex;
-      margin-bottom: 5rem;
-      justify-content: space-between;
+      margin-bottom: 3rem;
+      justify-content: center;
       align-items: center;
     }
     .dont-have-account-wrapper {
@@ -221,6 +226,7 @@ label ,a, p {
       display: flex;
       align-content: center;
       justify-content: center;
+      margin-bottom: 2rem;
       
       &_txt{
         color: $gray-color-1;
@@ -229,6 +235,7 @@ label ,a, p {
         margin-left: 3px;
         text-decoration: none;
         color: $red-dark-color;
+        font-weight: bold;
         
       }
     }

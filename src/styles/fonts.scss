@@ -1,0 +1,36 @@
+// $list: (
+//   "Black",
+//   "BlackItalic",
+//   "Bold",
+//   "BoldItalic",
+//   "Italic",
+//   "Light",
+//   "LightItalic",
+//   "Medium",
+//   "MediumItalic",
+//   "Regular",
+//   "Thin",
+//   "ThinItalic"
+// );
+
+// @mixin setRobotoFonts {
+//   @each $var in $list {
+//     @font-face {
+//       font-family: "Roboto-#{$var}";
+//       src: url("./../assets/Roboto/Roboto-#{$var}.ttf") format("ttf");
+//     }
+//   }
+// }
+// @include setRobotoFonts();
+
+
+
+// // @mixin setSofiaproFonts {
+
+// //     @font-face {
+// //       font-family: "Sofiapro-light";
+// //       src: url("./../assets/sofiapro/Fonts/sofiapro-light.otf") format("otf");
+// //     }
+  
+// // }
+// // @include setSofiaproFonts();

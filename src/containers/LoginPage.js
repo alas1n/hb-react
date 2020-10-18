@@ -32,6 +32,7 @@ function LoginPage() {
                 className="inputs-email_input"
                 name="email"
                 id="email"
+                placeholder="Username or Email"
               ></input>
             </div>
             <div className="inputs-password">
@@ -43,6 +44,7 @@ function LoginPage() {
                 className="inputs-password_input"
                 name="password"
                 id="password"
+                placeholder="Password"
               ></input>
             </div>
             <div className="inputs-checkbox">
