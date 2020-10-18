@@ -4,7 +4,8 @@ import React, { Component } from 'react';
 import LogoComponent from './../components/LogoComponent';
 import SearchBarComponent from './../components/SearchBarComponent';
 import SearchButtonComponent from './../components/SearchButtonComponent';
-import ProfileComponent from './../components/ProfileComponent';
+import ProfileComponent_header from '../components/ProfileComponent_header';
+import ProfileComponent_navigation from '../components/ProfileComponent_navigation';
 
 class DashboardPage extends Component {
   render() {
@@ -17,10 +18,12 @@ class DashboardPage extends Component {
           />
           <SearchBarComponent style={{}} />
           <SearchButtonComponent />
-          <ProfileComponent />
+          <ProfileComponent_header />
         </header>
         <div className="page-containter">
-          <nav className="dashboard-navigation">nav</nav>
+          <nav className="dashboard-navigation">
+            <ProfileComponent_navigation />
+          </nav>
           <section className="dashboard-sec">Dashboard</section>
         </div>
       </>
