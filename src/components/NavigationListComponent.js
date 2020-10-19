@@ -9,7 +9,6 @@ import { GrTextAlignFull } from 'react-icons/gr';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import { RiBarChartBoxLine } from 'react-icons/ri';
 import { RiSettings5Line } from 'react-icons/ri';
-import { FaAngleDoubleLeft } from 'react-icons/fa';
 
 const NavigationListComponent = ({ ...props }) => {
   return (

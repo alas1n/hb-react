@@ -2,7 +2,7 @@
   background-color: $white-color;
   height: 7.9rem;
   padding: 1.7rem 0;
-
+  box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
 
 }
 .page-containter {
@@ -16,10 +16,11 @@
   display: inline-block;
   width: 26.8rem;
   height: 100%;
+  box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
 
   &_last-item{
     display: flex;
-    // align-content: center;
+    background-color: $white-color;
     align-items: center;
     text-decoration: none;
     line-height: 5rem;
