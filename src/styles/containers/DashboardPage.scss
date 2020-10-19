@@ -7,14 +7,33 @@
 }
 .page-containter {
   width: 100vw;
-  height: calc(100vh - $Dashboard-heder-height);
-  background-color: $white-color-1;
+  height: calc(100vh - 7.9rem) ;
 }
 .dashboard-navigation {
+  position: relative;
   background-color: $white-color;
+  // background-color: $red-light-color;
   display: inline-block;
   width: 26.8rem;
   height: 100%;
+
+  &_last-item{
+    display: flex;
+    // align-content: center;
+    align-items: center;
+    text-decoration: none;
+    line-height: 5rem;
+    color: $gray-color-4;
+    font-size: 1.6rem;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  &_icon {
+    margin-right: 1rem;
+  }
+
 }
 .dashboard-sec {
   display: inline;

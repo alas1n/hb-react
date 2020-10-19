@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from './../assets/logo.svg';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 function TestPage() {
+  const options = ['one', 'two', 'three'];
+  const defaultOption = options[0];
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,13 @@ function TestPage() {
         >
           Learn React
         </a>
+        <Dropdown
+          options={options}
+          onChange={this._onSelect}
+          value={defaultOption}
+          placeholder="Select an option"
+        />
+        ;
       </header>
     </div>
   );
