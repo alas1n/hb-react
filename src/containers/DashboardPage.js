@@ -17,7 +17,6 @@ class DashboardPage extends Component {
             style={{ 'margin-left': '6.5rem', display: 'inline-block' }}
           />
           <SearchBarComponent style={{}} />
-          <SearchButtonComponent />
           <ProfileComponent_header />
         </header>
         <div className="page-containter">

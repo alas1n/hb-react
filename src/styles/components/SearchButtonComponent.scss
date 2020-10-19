@@ -1,7 +1,9 @@
 .searchbar-button-wrapper {
   display: inline;
   position: absolute;
-  left : calc(26.8rem + 53.7rem + 11px);
+  // left : calc(26.8rem + 53.7rem + 11px);
+  // left: 50%;
+  padding-left: 2rem;
   
   &_button {
     display: flex;

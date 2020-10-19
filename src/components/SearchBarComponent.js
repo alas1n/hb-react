@@ -1,5 +1,8 @@
 import React from 'react';
 
+// COMPONENTS:
+import SearchButtonComponent from './SearchButtonComponent';
+
 // ICONS:
 import { FiSearch } from 'react-icons/fi';
 
@@ -12,6 +15,7 @@ const SearchBarComponent = ({ ...props }) => {
         type="text"
         placeholder="Search"
       ></input>
+      <SearchButtonComponent />
     </div>
   );
 };

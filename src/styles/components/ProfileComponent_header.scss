@@ -4,10 +4,15 @@
   top: 0;
   right: 0;
   height: $Dashboard-heder-height;
-  // background-color: aqua;
   align-items: center;
-  // width: calc(21.1rem + 5rem);
   width: 33rem;
+  
+  @include respond(tab-land) {
+    width: 30rem;
+  }
+  @include respond(tab-port) {
+    width: 28rem;
+  }
 
   &_notif-icon {
     margin-right: 3rem;
@@ -37,13 +42,11 @@
       font-size: 1.2rem;
       color: $gray-color-3;
     }
-    // background-color: blue;
   }
   &_icon {
     position: absolute;
     right: 2.2rem;
     font-size: 1.8rem;
     color: $gray-color-3;
-
   }
 }

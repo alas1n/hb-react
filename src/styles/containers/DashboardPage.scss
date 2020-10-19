@@ -7,7 +7,7 @@
 }
 .page-containter {
   width: 100vw;
-  height: calc(100vh - 7rem);
+  height: calc(100vh - $Dashboard-heder-height);
   background-color: $white-color-1;
 }
 .dashboard-navigation {
