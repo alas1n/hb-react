@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 // COMPONENTS :
 import ProfileComponent_navigation from './../components/ProfileComponent_navigation';
 
@@ -18,14 +18,20 @@ const NavigationListComponent = ({ ...props }) => {
   return (
     <div className="nvigation-wrapper" style={props.style}>
       <ProfileComponent_navigation />
-      <a className="nvigation-wrapper_overview" href="#Overview">
+      <NavLink
+        to="/DashboardPage/OverView"
+        className="nvigation-wrapper_overview"
+      >
         <RiLayoutGridLine className="nvigation-wrapper_icon" />
         Overview
-      </a>
-      <a className="nvigation-wrapper_import-acticles" href="#import-acticles">
+      </NavLink>
+      <NavLink
+        to="/DashboardPage/Import_Article"
+        className="nvigation-wrapper_overview"
+      >
         <RiBook2Line className="nvigation-wrapper_icon" />
         Import Article
-      </a>
+      </NavLink>
       <a className="nvigation-wrapper_title-screening" href="#title-screening">
         <AiOutlinePicLeft className="nvigation-wrapper_icon" />
         Title Screening
