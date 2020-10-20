@@ -9,6 +9,7 @@
 @import './styles/containers/TestPage';
 @import './styles/containers/LoginPage';
 @import './styles/containers/DashboardPage';
+@import './styles/containers/DashboardContainer';
 
 // COMPONENTS
 @import './styles/components/LoginOptionsButton';
@@ -18,3 +19,5 @@
 @import './styles/components/ProfileComponent_header';
 @import './styles/components/ProfileComponent_navigation';
 @import './styles/components/NavigationListComponent';
+@import './styles/components/OverviewComponent';
+@import './styles/components/DashboardHeaderComponent';

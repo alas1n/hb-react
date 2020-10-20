@@ -1,0 +1,22 @@
+.dashboard-header-component {
+  // display: inline;
+  background-color: $white-color-1;
+  height: 6rem;
+  border-bottom: 1px solid $gray-color-5;
+  text-align: left;
+  padding-left: 4rem ; 
+  line-height: 6rem ;
+  font-size: 1.3rem;
+  // &_root1 &_root2 &_root3 {
+  & > * {
+    vertical-align:top;
+    display: inline-block;
+    line-height: 6rem ;
+    height: 6rem; 
+    margin : 0 3px;
+    color: $gray-color-5 ;
+  }
+  &_root3{
+    color: $text-blue-color;
+  }
+}

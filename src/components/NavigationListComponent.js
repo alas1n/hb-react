@@ -32,37 +32,50 @@ const NavigationListComponent = ({ ...props }) => {
         <RiBook2Line className="nvigation-wrapper_icon" />
         Import Article
       </NavLink>
-      <a className="nvigation-wrapper_title-screening" href="#title-screening">
+      <NavLink
+        to="/DashboardPage/Title_Screening"
+        className="nvigation-wrapper_overview"
+      >
         <AiOutlinePicLeft className="nvigation-wrapper_icon" />
         Title Screening
-      </a>
-      <a
-        className="nvigation-wrapper_full-text-screening"
-        href="#full-text-screening"
+      </NavLink>
+      <NavLink
+        to="/DashboardPage/Full_Text_Screening"
+        className="nvigation-wrapper_overview"
       >
         <GrTextAlignFull className="nvigation-wrapper_icon" />
         Full Text Screening
-      </a>
-      <a className="nvigation-wrapper_data-entry" href="#data-entry">
+      </NavLink>
+      <NavLink
+        to="/DashboardPage/Data_Entry"
+        className="nvigation-wrapper_overview"
+      >
         <HiOutlineDocumentDownload className="nvigation-wrapper_icon" />
         Data Entry
-      </a>
-      <a className="nvigation-wrapper_analysis" href="#analysis">
+      </NavLink>
+      <NavLink
+        to="/DashboardPage/Analysis"
+        className="nvigation-wrapper_overview"
+      >
         <RiBarChartBoxLine className="nvigation-wrapper_icon" />
         Analysis
-      </a>
+      </NavLink>
       <hr className="nvigation-wrapper_divider" />
-      <a className="nvigation-wrapper_setting" href="#setting">
+      <NavLink
+        to="/DashboardPage/Setting"
+        className="nvigation-wrapper_overview"
+      >
         <RiSettings5Line className="nvigation-wrapper_icon" />
         Setting
-      </a>
-      <a
+      </NavLink>
+
+      <NavLink
+        to="/DashboardPage/Collaps_Sidebar"
         className="nvigation-wrapper_last-item buttom"
-        href="#close-navigation"
       >
         <FaAngleDoubleLeft className="nvigation-wrapper_icon " />
         Collaps Sidebar
-      </a>
+      </NavLink>
     </div>
   );
 };

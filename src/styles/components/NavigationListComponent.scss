@@ -10,7 +10,7 @@
     display: none;
   }
 
-  & > a  {
+  & > a {
     display: inline-block;
     margin-bottom: .8rem;
     background-color: $white-color;
@@ -21,11 +21,14 @@
     width: 22.3rem;
     border-radius: 25px;
     text-align: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
   
   &_icon {
+    vertical-align:top;
+    height: 5rem;
     margin-right: 1rem;
+    width: 2rem;
   }
   
   &_divider {
