@@ -69,13 +69,23 @@ const NavigationListComponent = ({ ...props }) => {
         Setting
       </NavLink>
 
-      <NavLink
-        to="/DashboardPage/Collaps_Sidebar"
+      <button
         className="nvigation-wrapper_last-item buttom"
+        onClick={() => {
+          console.log('clicked');
+          props.SidebarController();
+          console.log(props.state);
+          // console.log('props.state');
+          // console.log(props.state);
+          // console.log('props.func/');
+          // console.log(props.func);
+        }}
+        // href="#"
+        // to="/DashboardPage/Collaps_Sidebar"
       >
         <FaAngleDoubleLeft className="nvigation-wrapper_icon " />
         Collaps Sidebar
-      </NavLink>
+      </button>
     </div>
   );
 };
