@@ -14,7 +14,7 @@ const Import_Article = () => {
 class DashboardContainer extends Component {
   render() {
     return (
-      <div>
+      <div className="dashboard-container">
         <Switch>
           <Route path="/DashboardPage/OverView">
             <OverViewComponent />

@@ -23,8 +23,54 @@ class OverViewComponent extends Component {
     return (
       <div>
         <DashboardHeaderComponent rootname3={'Activity'} />
-        <NavLink to="/DashboardPage/OverView/Comment">Comment</NavLink>
-        <NavLink to="/DashboardPage/OverView/Decissions">Decissions</NavLink>
+        <header className="overview-component-header">
+          <h1 className="overview-component-header_h1">Activity</h1>
+          <hr className="overview-component-header_hr" />
+          <div className="overview-component-header_navigator-wrapper">
+            <NavLink
+              to="/DashboardPage/OverView/Comment"
+              className="navigator-wrapper_link"
+              activeClassName="navigator-wrapper_link--active"
+            >
+              Comment
+            </NavLink>
+            <NavLink
+              to="/DashboardPage/OverView/Decissions"
+              className="navigator-wrapper_link"
+              activeClassName="navigator-wrapper_link--active"
+            >
+              Decissions
+            </NavLink>
+            <NavLink
+              to="/DashboardPage/OverView/Correlations"
+              className="navigator-wrapper_link"
+              activeClassName="navigator-wrapper_link--active"
+            >
+              Correlations
+            </NavLink>
+            <NavLink
+              to="/DashboardPage/OverView/Papers"
+              className="navigator-wrapper_link"
+              activeClassName="navigator-wrapper_link--active"
+            >
+              Papers
+            </NavLink>
+            <NavLink
+              to="/DashboardPage/OverView/Deduplication"
+              className="navigator-wrapper_link"
+              activeClassName="navigator-wrapper_link--active"
+            >
+              Deduplication
+            </NavLink>
+            <NavLink
+              to="/DashboardPage/OverView/Team"
+              className="navigator-wrapper_link"
+              activeClassName="navigator-wrapper_link--active"
+            >
+              Team
+            </NavLink>
+          </div>
+        </header>
         <Switch>
           <Route path="/DashboardPage/OverView/Comment">
             <Comment />

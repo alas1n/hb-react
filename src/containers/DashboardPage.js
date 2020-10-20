@@ -25,7 +25,7 @@ class DashboardPage extends Component {
           <ProfileComponent_header />
         </header>
         <div className="page-containter">
-          <nav className="dashboard-navigation">
+          <nav className="dashboard-navigation" id="asdf">
             <NavigationListComponent />
           </nav>
           <section className="dashboard-sec">
