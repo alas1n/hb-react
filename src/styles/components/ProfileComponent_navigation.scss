@@ -4,11 +4,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  position: relative;
-
-  top: 14.2rem - $Dashboard-header-height;
-  width: 100%;
-
+  padding-top: 5rem;
+  margin-bottom: 5rem;
   &_pic {
     border-radius: 50%;
     border: 2px solid $white-color-2;

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
-// ICONS :
-
 // COMPONENTS:
 import LogoComponent from './../components/LogoComponent';
 import SearchBarComponent from './../components/SearchBarComponent';
+import SearchButtonComponent from './../components/SearchButtonComponent';
 import ProfileComponent_header from '../components/ProfileComponent_header';
-import NavigationListComponent from '../components/NavigationListComponent';
+import ProfileComponent_navigation from '../components/ProfileComponent_navigation';
 
 class DashboardPage extends Component {
   render() {
@@ -18,11 +17,11 @@ class DashboardPage extends Component {
             style={{ 'margin-left': '6.5rem', display: 'inline-block' }}
           />
           <SearchBarComponent style={{}} />
-          <ProfileComponent_header />
-        </header>
+          <SearchButtonComponent />
+          <ProfileComponent_header />        </header>
         <div className="page-containter">
           <nav className="dashboard-navigation">
-            <NavigationListComponent />
+            <ProfileComponent_navigation />
           </nav>
           <section className="dashboard-sec">Dashboard</section>
         </div>

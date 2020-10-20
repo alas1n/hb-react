@@ -1,5 +1,8 @@
 import React from 'react';
 
+// COMPONENTS :
+import ProfileComponent_navigation from './../components/ProfileComponent_navigation';
+
 // PHOTOS:
 // ICONS:
 import { RiLayoutGridLine } from 'react-icons/ri';
@@ -9,10 +12,12 @@ import { GrTextAlignFull } from 'react-icons/gr';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import { RiBarChartBoxLine } from 'react-icons/ri';
 import { RiSettings5Line } from 'react-icons/ri';
+import { FaAngleDoubleLeft } from 'react-icons/fa';
 
 const NavigationListComponent = ({ ...props }) => {
   return (
     <div className="nvigation-wrapper" style={props.style}>
+      <ProfileComponent_navigation />
       <a className="nvigation-wrapper_overview" href="#Overview">
         <RiLayoutGridLine className="nvigation-wrapper_icon" />
         Overview
@@ -44,6 +49,13 @@ const NavigationListComponent = ({ ...props }) => {
       <a className="nvigation-wrapper_setting" href="#setting">
         <RiSettings5Line className="nvigation-wrapper_icon" />
         Setting
+      </a>
+      <a
+        className="nvigation-wrapper_last-item buttom"
+        href="#close-navigation"
+      >
+        <FaAngleDoubleLeft className="nvigation-wrapper_icon " />
+        Collaps Sidebar
       </a>
     </div>
   );
