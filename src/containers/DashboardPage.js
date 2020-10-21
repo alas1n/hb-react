@@ -7,7 +7,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoComponent from './../components/LogoComponent';
 import SearchBarComponent from './../components/SearchBarComponent';
 import ProfileComponent_header from '../components/ProfileComponent_header';
-import NavigationListComponent from '../components/NavigationListComponent';
+import {
+  NavigationListComponentWide,
+  NavigationListComponentNarrow,
+} from '../components/NavigationListComponent';
 
 // CONTAINERS:
 import DashboardContainer from './DashboardContainer';
@@ -35,19 +38,36 @@ class DashboardPage extends Component {
           </div>
           <ProfileComponent_header />
         </header>
-        <div className="page-containter">
-          <nav className="dashboard-navigation">
-            <NavigationListComponent
-              // props={(fnc:this.SidebarController, this.state)}
-              state={this.state}
-              SidebarController={this.SidebarController}
-            />
-          </nav>
-          <section className="dashboard-sec">
-            <hr className="dashboard-sec_divider" />
-            <DashboardContainer />
-          </section>
-        </div>
+        {!this.state.hideSidebar ? (
+          <div className="page-containter">
+            <nav className="dashboard-navigation">
+              <NavigationListComponentWide
+                state={this.state}
+                SidebarController={this.SidebarController}
+              />
+            </nav>
+            <section className="dashboard-sec">
+              <hr className="dashboard-sec_divider" />
+              <DashboardContainer />
+            </section>
+          </div>
+        ) : (
+          <div className="page-containter">
+            <nav className="dashboard-navigation" style={{ width: '8.3rem' }}>
+              <NavigationListComponentNarrow
+                state={this.state}
+                SidebarController={this.SidebarController}
+              />
+            </nav>
+            <section
+              className="dashboard-sec"
+              style={{ width: 'calc(100% - 8.3rem)' }}
+            >
+              <hr className="dashboard-sec_divider" />
+              <DashboardContainer />
+            </section>
+          </div>
+        )}
       </>
     );
   }

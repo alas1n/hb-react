@@ -13,9 +13,8 @@
   }
 }
 .page-containter {
-  width: 100vw;
+  overflow: hidden;
   height: calc(100vh - 7.9rem) ;
-  // box-shadow: inset 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
 }
 .dashboard-navigation {
   box-shadow: inset 0px 4px 10px  rgba(0, 1, 255, 0.08);
@@ -24,7 +23,6 @@
   display: inline-block;
   width: 26.8rem;
   height: 100%;
-  // box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
 }
 .dashboard-sec {
   box-shadow: inset 1px 5px 10px  rgba(0, 1, 255, 0.08);
@@ -35,12 +33,10 @@
   height: 100%;
   &_divider {
     border: none;
-    // width: 1px;
     height: 1px;
     position: relative;
     top: 6rem;
     z-index: 1;
-    // padding-left: ;
     color: $gray-color-5;
     background-color: $gray-color-5;
   }

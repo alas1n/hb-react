@@ -6,6 +6,28 @@
   width: 100%;
   height: 100%;
   box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
+  &--narrow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
+    padding-top: 26rem;
+    & > a , button {
+      display: inline-block;
+      margin-bottom: .8rem;
+      background-color: $white-color;
+      text-decoration: none;
+      line-height: 5rem;
+      color: $gray-color-4;
+      font-size: 1.6rem;
+      width: 5rem;
+      // border-radius: 25px;
+      text-align: left;
+      // padding-left: 1rem;
+      
+    }
+  }
   &::-webkit-scrollbar {
     display: none;
   }
@@ -22,6 +44,7 @@
     border-radius: 25px;
     text-align: left;
     padding-left: 1rem;
+    
   }
   
   &_icon {
@@ -29,6 +52,12 @@
     height: 5rem;
     margin-right: 1rem;
     width: 2rem;
+    &--narrow {
+      vertical-align:center;
+      // background-color: $red-dark-color;
+      height: 2.5rem;
+      width: 8.3rem;
+    }
   }
   
   &_divider {
@@ -38,6 +67,17 @@
     height:1px;
     border-width: 0;
     margin: 4.8rem 0;
+    &--narrow{
+      // text-align: center;
+      display: inline-block;
+      width: 6.3rem ;
+      // padding: 0 2 2 2 ;
+      margin: 0rem 1rem 2rem 1rem  ;
+      background-color: $gray-color-1;
+      height:1px;
+      border-width: 0;
+      // margin: 4.8rem 0;
+    }
   }
 
   &_last-item.buttom{
