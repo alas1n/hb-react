@@ -27,11 +27,12 @@ class DashboardPage extends Component {
     return (
       <>
         <header className="dashboard-header">
-          <LogoComponent
-            className="dashboard-header_logo"
-            style={{ 'margin-left': '6.5rem', display: 'inline-block' }}
-          />
-          <SearchBarComponent style={{}} />
+          <div className="dashboard-header_logo">
+            <LogoComponent />
+          </div>
+          <div className="dashboard-header_search-component">
+            <SearchBarComponent />
+          </div>
           <ProfileComponent_header />
         </header>
         <div className="page-containter">
@@ -43,6 +44,7 @@ class DashboardPage extends Component {
             />
           </nav>
           <section className="dashboard-sec">
+            <hr className="dashboard-sec_divider" />
             <DashboardContainer />
           </section>
         </div>

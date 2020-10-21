@@ -2,25 +2,46 @@
   background-color: $white-color;
   height: 7.9rem;
   padding: 1.7rem 0;
+  &_logo {
+    margin-left: 6.5rem; 
+    display: inline;
+    width: 100%;
+  }
+  &_search-component {
+    display: inline;
+    background-color: $red-dark-color;
+  }
 }
 .page-containter {
   width: 100vw;
   height: calc(100vh - 7.9rem) ;
-  box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
+  // box-shadow: inset 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
 }
 .dashboard-navigation {
+  box-shadow: inset 0px 4px 10px  rgba(0, 1, 255, 0.08);
   vertical-align:top;
   background-color: $white-color;
   display: inline-block;
   width: 26.8rem;
   height: 100%;
-  box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
+  // box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
 }
 .dashboard-sec {
-  box-shadow: 1px 6px 24px 0 rgba(0, 1, 255, 0.08);
+  box-shadow: inset 1px 5px 10px  rgba(0, 1, 255, 0.08);
   vertical-align:top;
   display: inline-block;
   background-color: $white-color-1;
   width: calc(100% - 26.8rem);
   height: 100%;
+  &_divider {
+    border: none;
+    // width: 1px;
+    height: 1px;
+    position: relative;
+    top: 6rem;
+    z-index: 1;
+    // padding-left: ;
+    color: $gray-color-5;
+    background-color: $gray-color-5;
+  }
 }
